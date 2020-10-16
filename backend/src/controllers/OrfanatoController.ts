@@ -53,7 +53,7 @@ export default {
       sobre,
       instrucoes,
       horario_funcionamento,
-      aberto_fim_semana,
+      aberto_fim_semana: aberto_fim_semana === 'true',
       imagens
     };
 
