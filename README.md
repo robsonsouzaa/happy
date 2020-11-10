@@ -1,7 +1,7 @@
 
 <div align="center">
   <h1>
-   :file_folder: <i>happy</i>
+    <img src="/mobile/assets/logo.png" alt="Logo da Proffy" />
   </h1>
 
   <p>
