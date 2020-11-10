@@ -3,7 +3,7 @@ import React , { useEffect, useState } from 'react';
 import { StyleSheet, Text, View, Dimensions, Platform } from 'react-native';
 import MapView, { PROVIDER_GOOGLE, Marker, Callout } from 'react-native-maps';
 import { Feather } from '@expo/vector-icons';
-import { useNavigation } from '@react-navigation/native';
+import { useNavigation, useFocusEffect } from '@react-navigation/native';
 import { RectButton } from 'react-native-gesture-handler';
 
 import mapMarker from '../images/map-marker.png';
@@ -22,11 +22,11 @@ export default function OrphanageMap() {
 
   const navigation = useNavigation();
 
-  useEffect(() => {
+  useFocusEffect(() => {
     api.get('orfanatos').then(response => {
       setOrphanages(response.data);
     });
-  }, []);
+  });
 
 
   function handleNavigateToOrphanageDetails(id: number) {
@@ -58,8 +58,8 @@ export default function OrphanageMap() {
                   y: 0.9,
                 }}
                 coordinate={{
-                  latitude: orphanage.latitude,
-                  longitude: orphanage.longitude,
+                  latitude: Number(orphanage.latitude),
+                  longitude: Number(orphanage.longitude),
                 }}
               >
                 <Callout tooltip onPress={() => handleNavigateToOrphanageDetails(orphanage.id)}>
