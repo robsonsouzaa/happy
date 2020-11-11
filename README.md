@@ -11,7 +11,7 @@
   <p align="center">
   <img src="https://img.shields.io/badge/status-concluído-15B6D6?style=for-the-badge" alt="Sistema web Ok" />
   
-  <img alt="Repository size" src="https://img.shields.io/github/repo-size/robsonsouzaa/happy?style=for-the-badge&color=15B6D6">
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/robsonsouzaa/ecoleta?style=for-the-badge&color=15B6D6">
 
   <a href="https://github.com/danielccunha/ecoleta/commits/master">
     <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/robsonsouzaa/happy?style=for-the-badge&color=15B6D6">
@@ -44,16 +44,18 @@ Projeto desenvolvido durante a Next Level Week 3, evento promovido pela Rocketse
   ## 🤝 Como contribuir
   
   ```bash
-  # crie uma branch com sua feature
+  # faça um fork desse repositório
+  
+  # crie uma branch com a sua feature
   $ git checkout -b sua-feature
   
-  # commit suas mudanças
+  # faça commit das suas alterações
   $ git commit -m 'feat: Minha nova feature'
   
-  # faça um commit para sua branch
-  $ git push origin my-feature
+  # faça um push para a sua branch
+  $ git push origin minha-feature
   
-  # só aguardar sua feature ser analisade e aprovada, depois você pode excluir sua branch
+  # depois que o merge da sua pull request for feito, você pode deletar a sua branch.
   
   ```
   
